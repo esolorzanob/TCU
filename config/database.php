@@ -58,7 +58,7 @@ return [
 			'database'  => env('DB_DATABASE', 'tel'),
 			'username'  => env('DB_USERNAME', 'root'),
             'unix_socket' => env('UNIX_SOCKET', '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'),
-			'password'  => env('DB_PASSWORD', ''),
+			'password'  => env('DB_PASSWORD', '11950640'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
