@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="<% elixir('css/all.css') %>"/>
 </head>
 <body ng-app="todoApp" ng-controller="MainController" ng-init="getAuthenticatedUser()">
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<div id="header">
+    <div id="bglogo">
+        <div class="logo">
+            <a>
+                <img class="img" src="http://www.casaviva.org/portal/wp-content/themes/casaviva/library/media/images/cvlogo.gif">
+            </a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">

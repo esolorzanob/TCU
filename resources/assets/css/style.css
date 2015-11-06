@@ -1,4 +1,6 @@
 body {
-    padding-top: 70px;
+    padding-top: 0px;
     padding-bottom: 30px;
+    background-image: url(http://www.casaviva.org/portal/wp-content/themes/casaviva/library/media/images/stripe2.png);
+    background-repeat: repeat;
 }
