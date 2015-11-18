@@ -25,7 +25,7 @@ angular.module('UserController', []).controller('UserController', ['$scope', 'Us
         password: this.password,
         rol: 1
       });
-      console.log(user.password);
+      
       user.$save(function (user) {
         $localStorage.token = user.token;
         $scope.getAuthenticatedUser(user);

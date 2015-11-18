@@ -7,7 +7,9 @@ angular.module('todoApp', [
   'MainController',
   'TodoController',
   'UserController',
+  'ActivosController',
   'UserService',
   'TodoService',
+  'ActivosService',
 ]);
 

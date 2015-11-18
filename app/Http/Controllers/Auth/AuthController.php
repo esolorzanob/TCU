@@ -55,13 +55,13 @@ class AuthController extends Controller
 	 */
 	public function create(array $data)
 	{
-		var_dump($data['password']);
-		//return User::create([
-		//	'name' => $data['nombre'],
-			//'apellidos' => $data['apellidos'],
-		//	'rol' => $data['rol'],
-		//	'usuario' => $data['usuario'],
-		//	'password' => $data['password'],
-		//]);
+		
+		return User::create([
+			'name' => $data['nombre'],
+			'apellidos' => $data['apellidos'],
+			'rol' => $data['rol'],
+			'usuario' => $data['usuario'],
+			'password' => $data['password'],
+		]);
 	}
 }

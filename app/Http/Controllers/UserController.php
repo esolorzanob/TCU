@@ -82,13 +82,15 @@ class UserController extends Controller
      */
     public function store()
     {
+        
         $user = new User($this->req->all());
-        if (!$user->save()) {
-            abort(500, 'Could not save user.');
+        
+       if (!$user->save()) {
+           abort(500, 'Could not save user.');
         }
         $user['token'] = $this->jwtAuth->fromUser($user);
         return $user;
-    }
+    } 
 
     /**
      * Display the specified resource.

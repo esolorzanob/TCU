@@ -7,6 +7,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', '
       })
       .when('/:category/:action?/:id?', {
         templateUrl: function (params) {
+          
           var allowedParams = ['category', 'action', 'id'];
           var paramVals = [];
           for (var key in params) {
