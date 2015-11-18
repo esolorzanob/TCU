@@ -2,8 +2,8 @@
       class="form-horizontal" novalidate>
     <div class="form-group">
         <div class="col-md-3">
-            <input type="text" id="username" ng-model="username"
-                   class="form-control" placeholder="Username">
+            <input type="text" id="usuario" ng-model="usuario"
+                   class="form-control" placeholder="Usuario">
         </div>
     </div>
     <div class="form-group">

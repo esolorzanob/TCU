@@ -43,7 +43,7 @@ return [
 	| choice installed on your machine before you begin development.
 	|
 	*/
-
+	
 	'connections' => [
 
 		'sqlite' => [
@@ -51,13 +51,14 @@ return [
 			'database' => storage_path().'/database.sqlite',
 			'prefix'   => '',
 		],
-
+		
 		'mysql' => [
+			
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', '127.0.0.1'),
 			'database'  => env('DB_DATABASE', 'tel'),
 			'username'  => env('DB_USERNAME', 'root'),
-            'unix_socket' => env('UNIX_SOCKET', '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'),
+            'unix_socket' => env(''),
 			'password'  => env('DB_PASSWORD', '11950640'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',

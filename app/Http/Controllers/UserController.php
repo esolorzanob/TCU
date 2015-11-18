@@ -19,6 +19,7 @@ class UserController extends Controller
         $this->user = $user;
         $this->res = $responseFactory;
         $this->jwtAuth = $jwtAuth;
+        
     }
 
     /**
@@ -28,8 +29,10 @@ class UserController extends Controller
      */
     public function login()
     {
+        
         $user = $this->user->authenticate(
-            $this->req->input('username'), $this->req->input('password'));
+            $this->req->input('usuario'), $this->req->input('password'));
+            
         if (!$user) {
             return $this->res->json([
                 'code' => null,

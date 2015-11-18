@@ -17,21 +17,21 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'Usuarios';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['username', 'email', 'password'];
+    protected $fillable = ['nombre', 'apellidos','usuario','password','rol'];
 
     /**
      * The attributes excluded from the model's JSON form.
      *
      * @var array
      */
-    protected $hidden = ['password', 'remember_token'];
+    protected $hidden = ['remember_token'];
 
     /**
      * Authenticate a user by username and password.
@@ -42,7 +42,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      */
     public function authenticate($username, $password)
     {
-        $user = User::where('username', $username)->first();
+        
+        $user = User::where('usuario', $username)->first();
+       
         if (!Hash::check($password, $user->password)) {
             return false;
         }
