@@ -49,7 +49,7 @@ class ActivosController extends Controller
         }
         return $activo;
     }
-
+    
     /**
      * Display the specified resource.
      *

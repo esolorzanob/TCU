@@ -27,11 +27,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/activos/edit_activos">Activos</a>
+            <a class="navbar-brand" href="/activos/list_activos">Activos</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li ng-class="{active:isActive('/todos')}"><a href="/todos">List Todos</a></li>
+                <li ng-class="{active:isActive('/todos')}"><a href="/activos/crear_activos">Crear Activo</a></li>
                 <li ng-class="{active:isActive('/todos/create')}"><a href="/todos/create">Create Todo</a></li>
                 <li ng-if="authenticatedUser == null" ng-class="{active:isActive('/auth/signup')}"><a href="/auth/signup">Sign Up</a></li>
                 <li ng-if="authenticatedUser == null" ng-class="{active:isActive('/auth/login')}"><a href="/auth/login">Log in</a></li>

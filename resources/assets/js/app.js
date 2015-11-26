@@ -8,6 +8,8 @@ angular.module('todoApp', [
   'TodoController',
   'UserController',
   'ActivosController',
+  'CrearController',
+  'ListController',
   'UserService',
   'TodoService',
   'ActivosService',
