@@ -18,7 +18,7 @@ class Activo extends Model
      *
      * @var array
      */
-    protected $fillable = ['Tipo', 'Descripcion', 'Numero_Factura','Fecha_Factura','Financiado_por','Fecha_Prestamo','Fecha_Devolucion','Condicion','Estado','Entregado_por','Centro','Id_Familia'];
+    protected $fillable = ['Tipo', 'Descripcion', 'Numero_Factura','Fecha_Factura','Financiado_por','Fecha_Prestamo','Fecha_Devolucion','Condicion','Estado','Entregado_por','Centro','Familia'];
 
     /**
      * The attributes excluded from the model's JSON form.

@@ -31,17 +31,17 @@
 				    </a>
 			    </th>
 			   
-			    <th>Eliminar</th>
-				<th>Crear Perfil</th>	    
+			    <th>Editar</th>
+					    
 		    </tr>
 			<tr ng-repeat="activo in activos">
-				<td>{{activo.Id_Activo}}</td>
+				<td>{{activo.id}}</td>
 				<td>{{activo.Descripcion}}</td>		
 				<td>{{activo.Tipo}}</td>
 				<td>{{activo.Condicion}}</td>
 				<td>{{activo.Estado}}</td>
-				<td><i class="fa fa-trash fa-lg"></i></td>
-				<td><i class="fa fa-share gray" ng-show="application.estado != 'Graduado'"></i></td>
+				<td><a href="/activos/edit_activos/{{activo.id}}">#</a></td>
+				
 			</tr>
 	  </table>
 	  </div>

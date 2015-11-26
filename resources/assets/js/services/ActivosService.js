@@ -5,8 +5,8 @@ angular.module('ActivosService', []).factory('Activo', ['$resource',
     }, {
       update: {
         method: 'PUT'
-      } 
-      
+      } , 
+     
     });
   }
 ]);

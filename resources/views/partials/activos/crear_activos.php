@@ -1,6 +1,6 @@
 <div class="form_wrapper">
 	<h1>Crear Activo</h1>
-   <form name="formActivos" ng-controller="ActivosController" role="form"
+   <form name="formActivos" ng-controller="CrearController" role="form"
       class="form-horizontal" novalidate>
 	  <div class="row">
       <div class="large-4 small-12 columns">

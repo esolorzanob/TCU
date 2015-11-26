@@ -3,7 +3,7 @@
 /public/css
 /public/js
 /public/build
-
+/resources/assets/imgs
 # Created by https://www.gitignore.io
 
 ### Laravel ###
