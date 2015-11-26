@@ -124,7 +124,7 @@
 	
     <div class="form-group">
         <div class="col-md-4">
-            <button type="button" class="btn btn-primary" ng-click="guardar()">Guardar</button>
+            <button type="button" class="btn btn-primary" ng-click="editar()">Guardar</button>
         </div>
     </div>
 </form>
