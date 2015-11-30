@@ -3,12 +3,13 @@ angular.module('UserController', []).controller('UserController', ['$scope', 'Us
     $scope.login = function () {
       
       var user = new User({
-        usuario: this.usuario,
+        Usuario: this.Usuario,
         password: this.password
       });
       user.$login(function (user) {
         $localStorage.token = user.token;
         $scope.getAuthenticatedUser(user);
+        $location.url('activos/list_activos');
       }, function (err) {
         console.log(err);
       });
@@ -19,9 +20,9 @@ angular.module('UserController', []).controller('UserController', ['$scope', 'Us
         return alert('The passwords do not match.');
       }
       var user = new User({
-        nombre: this.nombre,
-        apellidos:this.apellidos,
-        usuario: this.usuario,
+        Nombre: this.Nombre,
+        Apellidos:this.Apellidos,
+        Usuario: this.Usuario,
         password: this.password,
         rol: 1
       });

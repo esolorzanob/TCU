@@ -24,7 +24,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @var array
      */
-    protected $fillable = ['nombre', 'apellidos','usuario','password','rol'];
+    protected $fillable = ['Nombre', 'Apellidos','Usuario','password','Rol'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -42,7 +42,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      */
     public function authenticate($username, $password)
     {   
-        $user = User::where('usuario', $username)->first();
+        $user = User::where('Usuario', $username)->first();
            if (!Hash::check($password, $user->password)) {
             return false;
         }

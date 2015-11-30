@@ -31,7 +31,7 @@ class UserController extends Controller
     {
         
         $user = $this->user->authenticate(
-            $this->req->input('usuario'), $this->req->input('password'));
+            $this->req->input('Usuario'), $this->req->input('password'));
             
         if (!$user) {
             return $this->res->json([

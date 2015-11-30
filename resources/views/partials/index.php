@@ -1,6 +1,9 @@
-<p ng-if="authenticatedUser">
-    Hello {{authenticatedUser.nombre}}, thank you for installing me.
+<p ng-show="authenticatedUser">
+   <h3> Bienvenid@ {{authenticatedUser.Nombre}}, para empezar haga click en un link de la barra de navegación.</h3>
 </p>
-<p ng-if="!authenticatedUser">
-    Hello guest, thank you for installing me.
-</p>
+<div ng-show="!authenticatedUser">
+   <h1>Sistema de Actvios Casa Viva</h1>
+   <h3>Bienvenid@ para empezar haga click <a href="/auth/login">aquí</a></h3>
+    
+
+</div>
