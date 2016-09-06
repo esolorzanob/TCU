@@ -13,7 +13,7 @@
     <div id="bglogo">
         <div class="logo">
             <a href="/">
-                <img class="img" src="http://www.casaviva.org/portal/wp-content/themes/casaviva/library/media/images/cvlogo.gif">
+                <img class="img" src="http://casaviva.org/newsite/wp-content/uploads/2015/11/cvlogo.gif">
             </a>
         </div>
     </div>
@@ -26,8 +26,8 @@
                 <li ng-if="authenticatedUser != null"><a href="/activos/list_activos">Activos</a></li>
                 <li ng-if="authenticatedUser != null"><a href="/activos/crear_activos">Crear Activo</a></li>
                 <li ng-if="authenticatedUser != null"><a ng-href="/auth/signup">Crear Usuario</a></li>
-                <li ng-if="authenticatedUser == null"><a href="/auth/login">Log in</a></li>
-                <li ng-if="authenticatedUser != null" ng-click="logout()"><a href="#">Log out</a></li>
+                <li ng-if="authenticatedUser == null"><a href="/auth/login">Ingresar</a></li>
+                <li ng-if="authenticatedUser != null" ng-click="logout()"><a href="#">Salir</a></li>
             </ul>
         </div>
     </div>

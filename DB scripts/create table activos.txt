@@ -1,0 +1,17 @@
+CREATE TABLE `Activos`.`Activos` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `Tipo` VARCHAR(100) NULL COMMENT '',
+  `Descripcion` VARCHAR(500) NULL COMMENT '',
+  `Numero_Factura` VARCHAR(100) NULL COMMENT '',
+  `Fecha_Factura` VARCHAR(100) NULL COMMENT '',
+  `Financiado_por` VARCHAR(100) NULL COMMENT '',
+  `Fecha_Prestamo` VARCHAR(100) NULL COMMENT '',
+  `Fecha_Devolucion` VARCHAR(100) NULL COMMENT '',
+  `Condicion` VARCHAR(100) NULL COMMENT '',
+  `Estado` VARCHAR(100) NULL COMMENT '',
+  `Entregado_por` VARCHAR(100) NULL COMMENT '',
+  `Centro` VARCHAR(45) NULL COMMENT '',
+  `Familia` VARCHAR(100) NULL COMMENT '',
+  `updated_at` TIMESTAMP NULL COMMENT '',
+  `created_at` TIMESTAMP NULL COMMENT '',
+  PRIMARY KEY (`idActivos`)  COMMENT '');

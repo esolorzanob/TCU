@@ -11,6 +11,7 @@ angular.module('UserController', []).controller('UserController', ['$scope', 'Us
         $scope.getAuthenticatedUser(user);
         $location.url('activos/list_activos');
       }, function (err) {
+        $scope.error = "El nombre de usuario o la contraseña estan incorrectos."
         console.log(err);
       });
     };

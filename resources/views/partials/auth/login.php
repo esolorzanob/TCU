@@ -16,7 +16,8 @@
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <button type="submit" class="btn btn-primary">Login</button>
-        </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </div>        
     </div>
+    <p>{{error}}</p>
 </form>
