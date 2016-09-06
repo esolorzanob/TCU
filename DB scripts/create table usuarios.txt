@@ -1,0 +1,12 @@
+CREATE TABLE `Activos`.`Usuarios` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `Nombre` VARCHAR(100) NULL COMMENT '',
+  `Apellidos` VARCHAR(200) NULL COMMENT '',
+  `Usuario` VARCHAR(100) NULL COMMENT '',
+  `Usuarioscol` VARCHAR(45) NULL COMMENT '',
+  `password` VARCHAR(60) NULL COMMENT '',
+  `Rol` INT(11) NULL COMMENT '',
+  `remember_token` VARCHAR(100) NULL COMMENT '',
+  `created_at` TIMESTAMP NULL COMMENT '',
+  `updated_at` TIMESTAMP NULL COMMENT '',
+  PRIMARY KEY (`id`)  COMMENT '');

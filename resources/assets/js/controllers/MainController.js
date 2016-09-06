@@ -42,6 +42,7 @@ angular.module('MainController', []).controller('MainController', ['$scope', '$l
     $scope.logout = function () {
       delete $localStorage.token;
       $scope.authenticatedUser = null;
+      $location.url('/');
     };
   }
 ]);
